@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{435F8721-5826-5EFE-669F-E96ABA1CF36F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_3;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Script\MDApp.cs" />
+     <Compile Include="Assets\Script\Manager\CameraManager.cs" />
+     <Compile Include="Assets\Script\Manager\InputManager.cs" />
+     <Compile Include="Assets\Script\Manager\MapInfoManager.cs" />
+     <Compile Include="Assets\Script\Manager\PathManager.cs" />
+     <Compile Include="Assets\Script\Manager\ResourceManager.cs" />
+     <Compile Include="Assets\Script\Manager\SceneManager.cs" />
+     <Compile Include="Assets\Script\Manager\UIManager.cs" />
+     <Compile Include="Assets\Script\UI\Base\UILayer.cs" />
+     <Compile Include="Assets\Script\UI\Common\UINoticeBox.cs" />
+     <Compile Include="Assets\Script\UI\Login\UILogin.cs" />
+     <Compile Include="Assets\Script\Unit\ActionUnit.cs" />
+     <Compile Include="Assets\Script\Unit\MoveUnit.cs" />
+     <Compile Include="Assets\Script\Unit\Player.cs" />
+     <Compile Include="Assets\Script\Utils\MDDebug.cs" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-weapon.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-cube-env.shader" />
+     <None Include="Assets\Resources\Model\Shader\AditiveSmooth_UI_UP.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\Resources\Model\Shader\AditiveSmoothUV.shader" />
+     <None Include="Assets\Resources\Model\Shader\Aditive.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-Unlit-Scroll2Layers-Mul-skybox.shader" />
+     <None Include="Assets\Resources\Model\Shader\HiroshiBlendUV_Mask.shader" />
+     <None Include="Assets\Resources\Model\Shader\HiroshiAddUV_Mask.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-animtexture.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-Model_Double.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Resources\Model\Shader\AlphaBlend.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-PlayerDiffuse.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Text (TextureClip).shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-Unlit-Scroll2Layers-Mul-Sine.shader" />
+     <None Include="Assets\Resources\Model\Shader\Particle_Title_Addtive_UI_UP.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-blinking-god-rays.shader" />
+     <None Include="Assets\Resources\Model\Shader\AditiveUV.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-BlackWhite.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Particle Alpha Blend.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-UIGray 1.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-Lightmap-Unlit-VirtualVertexGlossy-Add.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-Lightmap-Unlit-Wind.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-billboarded-blinking-god-rays.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Particles Additive Culled.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\Resources\Model\Shader\Particle_Title_Addtive.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-Alpha_Model.shader" />
+     <None Include="Assets\Resources\Model\Shader\NBWater.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-lightprobe-VirtualVertexGlossy-Add.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-UIGray.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-skybox.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-Model_Simple.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Resources\Model\Shader\Dissolve_TexturCoords2.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-skybox-transparent.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\DepthMask.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-Unlit-Scroll2Layers-Sine-AlphaBlend.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-UIGray 3.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\MADFINGER-god-rays.shader" />
+     <None Include="Assets\Resources\Model\Shader\Aditive_UI_UP.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\Environment\Mobile-Lightmap-Unlit.shader" />
+     <None Include="Assets\Resources\Model\Shader\AlphaBlendUV.shader" />
+     <None Include="Assets\Resources\Model\Shader\AditiveSmooth.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\Resources\Model\Shader\AlphaBlend_UI_UP.shader" />
+     <None Include="Assets\Resources\Model\Shader\NGUI\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Resources\Model\Shader\T4M\T4M_4_Textures.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-UIGray 2.shader" />
+     <None Include="Assets\Resources\Model\Shader\Shaders\TextureSimple.shader" />
+     <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-Model_Simple_No_A.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

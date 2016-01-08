@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 85256925543871c488e3988725d60c0d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SC105Jjy_bideng
+    100004: SC105Jjy_diaodeng
+    100006: SC105Jjy_diaodeng01
+    100008: SC105Jjy_diaodeng02
+    100010: SC105Jjy_kaoxingjia01
+    100012: SC105Jjy_kaoxingjia02
+    100014: SC105Jjy_kaoxingjia03
+    100016: SC105Jjy_kaoxingjia04
+    100018: SC105Jjy_kaoxingjia1
+    100020: SC105Jjy_kaoxingjia2
+    100022: SC105Jjy_MUBAN
+    100024: SC105Jjy_muban01
+    100026: SC105Jjy_muban02
+    100028: SC105Jjy_qiangbi01
+    100030: SC105Jjy_qiangbi02
+    100032: SC105Jjy_qiangbi03
+    100034: SC105Jjy_qiangbi04
+    100036: SC105Jjy_qiangbi1
+    100038: SC105Jjy_qiangbi2
+    100040: SC105Jjy_xiangzi
+    100042: SC105Jjy_zhiwang
+    400000: //RootNode
+    400002: SC105Jjy_bideng
+    400004: SC105Jjy_diaodeng
+    400006: SC105Jjy_diaodeng01
+    400008: SC105Jjy_diaodeng02
+    400010: SC105Jjy_kaoxingjia01
+    400012: SC105Jjy_kaoxingjia02
+    400014: SC105Jjy_kaoxingjia03
+    400016: SC105Jjy_kaoxingjia04
+    400018: SC105Jjy_kaoxingjia1
+    400020: SC105Jjy_kaoxingjia2
+    400022: SC105Jjy_MUBAN
+    400024: SC105Jjy_muban01
+    400026: SC105Jjy_muban02
+    400028: SC105Jjy_qiangbi01
+    400030: SC105Jjy_qiangbi02
+    400032: SC105Jjy_qiangbi03
+    400034: SC105Jjy_qiangbi04
+    400036: SC105Jjy_qiangbi1
+    400038: SC105Jjy_qiangbi2
+    400040: SC105Jjy_xiangzi
+    400042: SC105Jjy_zhiwang
+    2300000: SC105Jjy_bideng
+    2300002: SC105Jjy_diaodeng01
+    2300004: SC105Jjy_diaodeng02
+    2300006: SC105Jjy_kaoxingjia01
+    2300008: SC105Jjy_kaoxingjia02
+    2300010: SC105Jjy_kaoxingjia03
+    2300012: SC105Jjy_kaoxingjia04
+    2300014: SC105Jjy_muban01
+    2300016: SC105Jjy_muban02
+    2300018: SC105Jjy_qiangbi01
+    2300020: SC105Jjy_qiangbi02
+    2300022: SC105Jjy_qiangbi03
+    2300024: SC105Jjy_qiangbi04
+    2300026: SC105Jjy_xiangzi
+    2300028: SC105Jjy_zhiwang
+    3300000: SC105Jjy_bideng
+    3300002: SC105Jjy_diaodeng01
+    3300004: SC105Jjy_diaodeng02
+    3300006: SC105Jjy_kaoxingjia01
+    3300008: SC105Jjy_kaoxingjia02
+    3300010: SC105Jjy_kaoxingjia03
+    3300012: SC105Jjy_kaoxingjia04
+    3300014: SC105Jjy_muban01
+    3300016: SC105Jjy_muban02
+    3300018: SC105Jjy_qiangbi01
+    3300020: SC105Jjy_qiangbi02
+    3300022: SC105Jjy_qiangbi03
+    3300024: SC105Jjy_qiangbi04
+    3300026: SC105Jjy_xiangzi
+    3300028: SC105Jjy_zhiwang
+    4300000: SC105Jjy_zhiwang
+    4300002: SC105Jjy_xiangzi
+    4300004: SC105Jjy_bideng
+    4300006: SC105Jjy_muban02
+    4300008: SC105Jjy_muban01
+    4300010: SC105Jjy_qiangbi02
+    4300012: SC105Jjy_qiangbi01
+    4300014: SC105Jjy_qiangbi04
+    4300016: SC105Jjy_qiangbi03
+    4300018: SC105Jjy_diaodeng01
+    4300020: SC105Jjy_diaodeng02
+    4300022: SC105Jjy_kaoxingjia04
+    4300024: SC105Jjy_kaoxingjia03
+    4300026: SC105Jjy_kaoxingjia02
+    4300028: SC105Jjy_kaoxingjia01
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

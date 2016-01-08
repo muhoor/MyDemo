@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: dbc7338e2015b094c923421312baa42b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Box104
+    100002: Object001
+    100004: Object1180
+    100006: Object1710
+    100008: Object1747
+    100010: Object1752
+    100012: Object1763
+    100014: Object2342
+    100016: Object2350
+    100018: Object2364
+    100020: objobjDrawCall_0369
+    100022: zc_gx_01
+    100024: zc_gx_01 1
+    100026: zc_gx_02
+    100028: zc_gx_03
+    100030: zc_gx_04
+    100032: zc_gx_05
+    100034: zc_gx_06
+    100036: zc_gx_07
+    100038: zc_gx_07 1
+    100040: zc_gx_07 2
+    100042: zc_gx_07 3
+    100044: zc_gx_07 4
+    100046: zc_gx_07 5
+    100048: zc_gx_07 6
+    100050: //RootNode
+    100052: zc_gx_08
+    100054: Object012
+    100056: zc_gx_011
+    400000: Box104
+    400002: Object001
+    400004: Object1180
+    400006: Object1710
+    400008: Object1747
+    400010: Object1752
+    400012: Object1763
+    400014: Object2342
+    400016: Object2350
+    400018: Object2364
+    400020: objobjDrawCall_0369
+    400022: zc_gx_01
+    400024: zc_gx_01 1
+    400026: zc_gx_02
+    400028: zc_gx_03
+    400030: zc_gx_04
+    400032: zc_gx_05
+    400034: zc_gx_06
+    400036: zc_gx_07
+    400038: zc_gx_07 1
+    400040: zc_gx_07 2
+    400042: zc_gx_07 3
+    400044: zc_gx_07 4
+    400046: zc_gx_07 5
+    400048: zc_gx_07 6
+    400050: //RootNode
+    400052: zc_gx_08
+    400054: Object012
+    400056: zc_gx_011
+    2300000: Box104
+    2300002: Object1710
+    2300004: Object1747
+    2300006: Object1752
+    2300008: Object1763
+    2300010: Object2342
+    2300012: Object2350
+    2300014: Object2364
+    2300016: zc_gx_01
+    2300018: zc_gx_01 1
+    2300020: zc_gx_02
+    2300022: zc_gx_03
+    2300024: zc_gx_04
+    2300026: zc_gx_05
+    2300028: zc_gx_06
+    2300030: zc_gx_07
+    2300032: zc_gx_07 1
+    2300034: zc_gx_07 2
+    2300036: zc_gx_07 3
+    2300038: zc_gx_07 4
+    2300040: zc_gx_07 5
+    2300042: zc_gx_07 6
+    2300044: zc_gx_08
+    2300046: Object012
+    2300048: zc_gx_011
+    3300000: Box104
+    3300002: Object1710
+    3300004: Object1747
+    3300006: Object1752
+    3300008: Object1763
+    3300010: Object2342
+    3300012: Object2350
+    3300014: Object2364
+    3300016: zc_gx_01
+    3300018: zc_gx_01 1
+    3300020: zc_gx_02
+    3300022: zc_gx_03
+    3300024: zc_gx_04
+    3300026: zc_gx_05
+    3300028: zc_gx_06
+    3300030: zc_gx_07
+    3300032: zc_gx_07 1
+    3300034: zc_gx_07 2
+    3300036: zc_gx_07 3
+    3300038: zc_gx_07 4
+    3300040: zc_gx_07 5
+    3300042: zc_gx_07 6
+    3300044: zc_gx_08
+    3300046: Object012
+    3300048: zc_gx_011
+    4300000: Box104
+    4300002: zc_gx_06
+    4300004: zc_gx_05
+    4300006: Object1710
+    4300008: Object1763
+    4300010: Object1747
+    4300012: Object1752
+    4300014: zc_gx_02
+    4300016: zc_gx_03
+    4300018: Object2342
+    4300020: Object2350
+    4300022: Object2364
+    4300024: zc_gx_01
+    4300026: zc_gx_07
+    4300028: zc_gx_07
+    4300030: zc_gx_07
+    4300032: zc_gx_07
+    4300034: zc_gx_07
+    4300036: zc_gx_07
+    4300038: zc_gx_07
+    4300040: zc_gx_01
+    4300042: zc_gx_04
+    4300044: zc_gx_08
+    4300046: zc_gx_011
+    4300048: Object012
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
