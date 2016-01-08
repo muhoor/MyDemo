@@ -38,11 +38,15 @@ public class SceneManager  {
         CameraManager.getInstance().setPlayer(player);
     }
 
-    public void controlPlayer(int leftOrRight,int downOrUp)
+    public void controlPlayer(int leftOrRight,int downOrUp,KeyCode keyCode = KeyCode.None)
     {
         if (player != null)
         {
             player.move(leftOrRight, downOrUp);
+            if(keyCode == KeyCode.A)
+            {
+                player.playAttack();
+            }
         }
     }
 }

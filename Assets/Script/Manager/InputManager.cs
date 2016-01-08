@@ -47,6 +47,12 @@ public class InputManager : MonoBehaviour {
             lefrOrRight++;
         }
 
-        SceneManager.getInstance().controlPlayer(lefrOrRight, downOrUp);
+        KeyCode keyCode = KeyCode.None;
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            keyCode = KeyCode.A;
+        }
+
+        SceneManager.getInstance().controlPlayer(lefrOrRight, downOrUp, keyCode);
     }
 }

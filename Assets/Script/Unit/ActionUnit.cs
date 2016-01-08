@@ -5,6 +5,7 @@ public class ActionUnit : MoveUnit {
 
     private Transform animTransform = null;
     private Animation anim = null;
+    private bool isAttacking = false;
 
     protected override void unitStart()
     {
@@ -18,15 +19,46 @@ public class ActionUnit : MoveUnit {
         playStand();
     }
 
+    private void playAction(string action,WrapMode wrapMode = WrapMode.Loop)
+    {
+        anim.wrapMode = wrapMode;
+        anim.CrossFade(action);
+    }
+
     public void playStand()
     {
-        anim.wrapMode = WrapMode.Loop;
-        anim.Play("stand");
+        if (isAttacking)
+        {
+            return;
+        }
+        playAction(Action.Stand);
     }
 
     public void playWalk()
     {
-        anim.wrapMode = WrapMode.Loop;
-        anim.Play("walk");
+        if (isAttacking)
+        {
+            return;
+        }
+        playAction(Action.Walk);
+    }
+
+    public void playAttack()
+    {
+        if (!isAttacking)
+        {
+            isAttacking = true;
+            movable = false;
+            Invoke("attackComplete", anim[Action.Attack].length);
+            playAction(Action.Attack, WrapMode.Once);
+        }
+    }
+
+    private void attackComplete()
+    {
+        isAttacking = false;
+        movable = true;
+        playAction(Action.Stand);
+        MDDebug.Log("攻击完毕");
     }
 }
