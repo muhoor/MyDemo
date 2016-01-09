@@ -8,6 +8,7 @@ public class MoveUnit : MonoBehaviour {
     protected float speed = 0.1f;       //移动速度
     private float moveX = 0;
     private float moveZ = 0;
+    private float lerpY = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -57,9 +58,10 @@ public class MoveUnit : MonoBehaviour {
         float y = MapInfoManager.getInstance().getMapY(x, z);
         if(y != MapInfoManager.NotExist)
         {
-            
             isMoving = true;
-            transform.localPosition = new Vector3(x, y, z);
+            if (lerpY == 0) lerpY = y;
+            lerpY = Mathf.Lerp(lerpY, y, 0.1f);
+            transform.localPosition = new Vector3(x, lerpY, z);
             //transform.localPosition = Vector3.MoveTowards(transform.localPosition, new Vector3(x,y,x), 1);
         }
         else

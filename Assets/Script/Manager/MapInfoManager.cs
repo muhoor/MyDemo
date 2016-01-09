@@ -6,6 +6,7 @@ using System.IO;
 public class MapInfoManager  {
     public const float NotExist = -9999;
     private static MapInfoManager instance = null;
+    private bool showGrid = false;
 
     public static MapInfoManager getInstance()
     {
@@ -30,16 +31,28 @@ public class MapInfoManager  {
     {
         Dictionary<string, float> dic = new Dictionary<string, float>();
 
-        StreamReader read = new StreamReader(PathManager.getMapInfoPath(sceneName));
+        List<float> list = new List<float>();
+        FileStream fs = new FileStream(PathManager.getMapInfoPath(sceneName), FileMode.Open);
 
-        string r;
-        while ((r = read.ReadLine()) != null)
+        byte[] b = new byte[4];
+        for (int index = 0; index < fs.Length / 4; index++)
         {
-            string[] split = r.Split('_');
-            dic.Add(split[0] + "_" + split[1], float.Parse(split[2]));
+            fs.Read(b, 0, 4);
+            list.Add(System.BitConverter.ToSingle(b, 0));
+            if(list.Count == 3)
+            {
+                if (showGrid)
+                {
+                    GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                    cube.transform.localScale = new Vector3(0.9f, 0f, 0.9f);
+                    cube.transform.localPosition = new Vector3(list[0], list[2], list[1]);
+                }
+                dic.Add(list[0] + "_" + list[1], list[2]);
+                list.Clear();
+            }
         }
-        read.Close();
-        MDDebug.Log("map:"+sceneName +" load complete");
+        fs.Close();
+
         return dic;
     }
 
@@ -60,9 +73,11 @@ public class MapInfoManager  {
         int minX = Mathf.FloorToInt(x);
         int minZ = Mathf.FloorToInt(z);
 
-        return getValue(maxX, maxZ);
+        x = Mathf.RoundToInt(x);
+        z = Mathf.RoundToInt(z);
+        float result = getValue((int)x, (int)z);
 
-        /*float offsetX = x % 1 - 0.5f;
+        float offsetX = x % 1 - 0.5f;
         float offsetZ = z % 1 - 0.5f;
         float angle = Mathf.Atan2(offsetZ, offsetX)/Mathf.PI;
         if(angle > -0.25f && angle < 0.25f)
@@ -74,7 +89,7 @@ public class MapInfoManager  {
             {
                 return NotExist;
             }
-            return (maxY - minY) * offsetZ + minY;
+            
         }
         else if (angle > 0.25f && angle < 0.75f)
         {
@@ -85,7 +100,7 @@ public class MapInfoManager  {
             {
                 return NotExist;
             }
-            return (maxY - minY) * offsetX + minY;
+            
         }
         else if(angle > 0.75f || angle < -0.75f)
         {
@@ -96,7 +111,7 @@ public class MapInfoManager  {
             {
                 return NotExist;
             }
-            return (maxY - minY) * offsetZ + minY;
+            
         }
         else
         {
@@ -107,8 +122,9 @@ public class MapInfoManager  {
             {
                 return NotExist;
             }
-            return (maxY - minY) * offsetX + minY;
-        }*/
+            
+        }
+        return result;
     }
 
     private float getValue(int x,int z)

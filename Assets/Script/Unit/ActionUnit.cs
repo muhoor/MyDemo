@@ -59,6 +59,5 @@ public class ActionUnit : MoveUnit {
         isAttacking = false;
         movable = true;
         playAction(Action.Stand);
-        MDDebug.Log("攻击完毕");
     }
 }

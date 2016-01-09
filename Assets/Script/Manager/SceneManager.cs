@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SceneManager  {
 
@@ -26,7 +27,7 @@ public class SceneManager  {
         player = Player.Create();
         player.transform.SetParent(unitNode.transform);
 
-        foreach(var v in MapInfoManager.getInstance().getMapInfo())
+        foreach (var v in MapInfoManager.getInstance().getMapInfo())
         {
             string k = v.Key;
             float y = v.Value;
