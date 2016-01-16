@@ -53,6 +53,6 @@ public class InputManager : MonoBehaviour {
             keyCode = KeyCode.A;
         }
 
-        SceneManager.getInstance().controlPlayer(lefrOrRight, downOrUp, keyCode);
+        UnitManager.getInstance().controlPlayer(lefrOrRight, downOrUp, keyCode);
     }
 }

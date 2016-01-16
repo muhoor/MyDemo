@@ -47,6 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Script\MDApp.cs" />
      <Compile Include="Assets\Script\Manager\CameraManager.cs" />
+     <Compile Include="Assets\Script\Manager\Fight\FightManager.cs" />
+     <Compile Include="Assets\Script\Manager\Fight\UnitManager.cs" />
      <Compile Include="Assets\Script\Manager\InputManager.cs" />
      <Compile Include="Assets\Script\Manager\MapInfoManager.cs" />
      <Compile Include="Assets\Script\Manager\PathManager.cs" />
@@ -58,6 +60,7 @@
      <Compile Include="Assets\Script\UI\Login\UILogin.cs" />
      <Compile Include="Assets\Script\Unit\Action.cs" />
      <Compile Include="Assets\Script\Unit\ActionUnit.cs" />
+     <Compile Include="Assets\Script\Unit\Monster.cs" />
      <Compile Include="Assets\Script\Unit\MoveUnit.cs" />
      <Compile Include="Assets\Script\Unit\Player.cs" />
      <Compile Include="Assets\Script\Utils\MDDebug.cs" />
@@ -126,17 +129,11 @@
      <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-UIGray 2.shader" />
      <None Include="Assets\Resources\Model\Shader\Shaders\TextureSimple.shader" />
      <None Include="Assets\Resources\Model\Shader\Gaods\Gaods-Model_Simple_No_A.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

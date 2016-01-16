@@ -5,8 +5,6 @@ using System.Collections.Generic;
 public class SceneManager  {
 
     private static SceneManager instance = null;
-    private GameObject unitNode = null;
-    private Player player = null;
 
     public static SceneManager getInstance()
     {
@@ -17,37 +15,14 @@ public class SceneManager  {
         return instance;
     }
 
-    public void setUnitNode(GameObject node)
-    {
-        unitNode = node;
-    }
-
     public void sceneLoadComplete()
     {
-        player = Player.Create();
-        player.transform.SetParent(unitNode.transform);
-
-        foreach (var v in MapInfoManager.getInstance().getMapInfo())
+        UnitManager.getInstance().createMyPlayer();
+        for(int i = 0; i < 10; i++)
         {
-            string k = v.Key;
-            float y = v.Value;
-            string[] s = k.Split('_');
-            player.transform.localPosition = new Vector3(float.Parse(s[0]),y, float.Parse(s[1]));
-            break;
-        }
-
-        CameraManager.getInstance().setPlayer(player);
-    }
-
-    public void controlPlayer(int leftOrRight,int downOrUp,KeyCode keyCode = KeyCode.None)
-    {
-        if (player != null)
-        {
-            player.move(leftOrRight, downOrUp);
-            if(keyCode == KeyCode.A)
-            {
-                player.playAttack();
-            }
+            UnitManager.getInstance().createRandomMonster(i);
         }
     }
+
+    
 }

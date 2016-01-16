@@ -2,10 +2,13 @@
 using System.Collections;
 
 public class ActionUnit : MoveUnit {
-
+    
     private Transform animTransform = null;
     private Animation anim = null;
-    private bool isAttacking = false;
+    public float attackRange = 1;
+    public float attackDelay = 1f;
+
+    private ActionUnit attacker = null;
 
     protected override void unitStart()
     {
@@ -27,7 +30,7 @@ public class ActionUnit : MoveUnit {
 
     public void playStand()
     {
-        if (isAttacking)
+        if (status == UnitStatus.attack)
         {
             return;
         }
@@ -36,7 +39,7 @@ public class ActionUnit : MoveUnit {
 
     public void playWalk()
     {
-        if (isAttacking)
+        if (status == UnitStatus.attack)
         {
             return;
         }
@@ -45,19 +48,53 @@ public class ActionUnit : MoveUnit {
 
     public void playAttack()
     {
-        if (!isAttacking)
+        if (status != UnitStatus.attack)
         {
-            isAttacking = true;
+            status = UnitStatus.attack;
             movable = false;
             Invoke("attackComplete", anim[Action.Attack].length);
             playAction(Action.Attack, WrapMode.Once);
+            attack();
         }
+    }
+
+    protected virtual void attack()
+    {
+
     }
 
     private void attackComplete()
     {
-        isAttacking = false;
+        status = UnitStatus.stand;
         movable = true;
-        playAction(Action.Stand);
+        playStand();
     }
+
+    public void showInjured(ActionUnit attacker,float delay)
+    {
+        this.attacker = attacker;
+        Invoke("playInjured", delay);
+    }
+
+    private void playInjured()
+    {
+        status = UnitStatus.injured;
+        movable = false;
+        playAction(Action.Injured,WrapMode.Once);
+        Invoke("injuredComplete", anim[Action.Injured].length);
+        injured(attacker);
+    }
+
+    protected virtual void injured(ActionUnit attacker)
+    {
+
+    }
+
+    private void injuredComplete()
+    {
+        status = UnitStatus.stand;
+        movable = true;
+        playStand();
+    }
+
 }

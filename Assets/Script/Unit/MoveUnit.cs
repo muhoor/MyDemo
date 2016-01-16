@@ -3,9 +3,19 @@ using System.Collections;
 
 public class MoveUnit : MonoBehaviour {
 
-    protected bool movable = true;      //控制是否可以移动，比如攻击中不能移动
-    protected bool isMoving = false;    //是否正在移动
-    protected float speed = 0.1f;       //移动速度
+    public enum UnitStatus
+    {
+        attack,
+        stand,
+        injured,
+        move,
+    }
+
+
+    protected bool movable = true;                  //控制是否可以移动，比如攻击中不能移动
+    protected UnitStatus status = UnitStatus.stand; //当前状态
+    protected float speed = 0.1f;                   //移动速度
+
     private float moveX = 0;
     private float moveZ = 0;
     private float lerpY = 0;
@@ -48,7 +58,7 @@ public class MoveUnit : MonoBehaviour {
         }
         if(moveX == 0 && moveZ == 0)
         {
-            isMoving = false;
+            status = UnitStatus.stand;
             return;
         }
         setDirection();
@@ -58,7 +68,7 @@ public class MoveUnit : MonoBehaviour {
         float y = MapInfoManager.getInstance().getMapY(x, z);
         if(y != MapInfoManager.NotExist)
         {
-            isMoving = true;
+            status = UnitStatus.move;
             if (lerpY == 0) lerpY = y;
             lerpY = Mathf.Lerp(lerpY, y, 0.1f);
             transform.localPosition = new Vector3(x, lerpY, z);
@@ -66,7 +76,7 @@ public class MoveUnit : MonoBehaviour {
         }
         else
         {
-            isMoving = false;
+            status = UnitStatus.stand;
         }
         
     }

@@ -19,7 +19,7 @@ public class MDApp : MonoBehaviour {
         DontDestroyOnLoad(CamObj);
         DontDestroyOnLoad(UnitNode);
         UIManager.getInstance().setUIRoot(UIRoot);
-        SceneManager.getInstance().setUnitNode(UnitNode);
+        UnitManager.getInstance().setUnitNode(UnitNode);
         UILogin.Open();
     }
     // Update is called once per frame
